@@ -11,7 +11,8 @@ public class Basics {
 		int c = a+b;
 		
 		System.out.println(c);
-		System.out.println(5+c);
+		System.out.println(5+c+6);
+		
 		
 
 	}
