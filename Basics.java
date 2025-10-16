@@ -6,14 +6,25 @@ public class Basics {
 	
 		System.out.println("First Program");
 		
-		int a = 3 , b = 21;
+		//Create a Program to print Student details like Student Name, Roll No, Subject,Total Marks.
 		
-		int c = a+b;
+		String studentName = "Vigneshwaran";
 		
-		System.out.println(c);
-		System.out.println(5+c+6);
+		int Roll_no = 21;
+		
+		String subject = "Java";
+		
+		int totalMarks = 100;
 		
 		
+		System.out.println("Student name is :" +studentName);
+		
+		System.out.println("Roll no is :" +Roll_no);
+		
+		
+		System.out.println("Subject :" +subject);
+		 
+		System.out.println("TotalMarks :" +totalMarks);
 
 	}
 	
