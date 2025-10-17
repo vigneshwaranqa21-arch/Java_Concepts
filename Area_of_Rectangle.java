@@ -16,21 +16,10 @@ public class Area_of_Rectangle {
 		int area = length * breadth;
 		
 		System.out.println("Area of a Rectangle is "+ area);
+		
+		sc.close();
 				
-			
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 
