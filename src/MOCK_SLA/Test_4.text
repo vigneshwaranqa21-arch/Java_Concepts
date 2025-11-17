@@ -1,0 +1,48 @@
+
+
+1. Explain about Experience based testing techniques?
+
+
+Error Guessing – Tester predicts defects based on intuition and past failures.
+
+Exploratory Testing – Simultaneous test design, execution, and learning.
+
+Checklist-Based Testing – Using predefined checklists from past projects.
+
+Ad-hoc Testing – Unstructured testing based purely on tester’s knowledge.
+
+Boundary or Attack-Based Testing – Focusing on areas historically vulnerable to defects.
+
+
+2. Explain about Defect Life Cycle ?
+
+New → Assigned → Open/In-Progress (Developer starts working).
+
+Open/In-Progress → Fixed (Developer provides the fix).
+
+Fixed → Retest (Tester validates the fix).
+
+Retest → Verified → Closed (If working fine).
+
+Retest → Reopened → Assigned (If the issue still exists).
+
+
+
+3.Explain about test metrics?
+
+Test metrics quantify testing progress, quality, and efficiency.
+
+They track areas like execution rate, defect trends, and coverage.
+
+Key metrics: Defect Density, Test Coverage, Pass/Fail %, Defect Leakage.
+
+Metrics highlight risks, bottlenecks, and overall product health.
+
+They support decision-making for release readiness and process improvement.
+
+
+
+
+
+
+

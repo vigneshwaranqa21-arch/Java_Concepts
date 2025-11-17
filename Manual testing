@@ -188,4 +188,303 @@ All test cases executed, major bugs fixed, exit criteria met.
 
 Test Execution Report → Exit Criteria: Because it’s shared after execution to confirm test completion.
 
+24. Coding Standards
+
+Set of guidelines for writing clean, consistent, and readable code.
+
+Includes naming conventions, indentation, comments, and file structure.
+
+Improves maintainability and reduces debugging effort.
+
+Ensures all team members follow the same coding style.
+
+Enhances code quality and reduces chances of defects.
+
+25. Benefits of Static Testing
+
+Detects defects early without executing the code.
+
+Finds syntax errors, design flaws, and coding standard violations.
+
+Reduces cost and effort by preventing late-stage defects.
+
+Improves code quality, readability, and maintainability.
+
+Enhances overall reliability and security of the application.
+
+26. Explain about Boundary Value Analysis and Write a test case for that ?
+
+Boundary Value Analysis (BVA)
+
+Technique to test values at the boundaries of input ranges.
+
+Defects often occur at the minimum, maximum, just below, and just above limits.
+
+Focuses on edge values rather than full range.
+
+Example Requirement: Age must be between 18 and 60.
+
+BVA Test Cases:
+
+17 → Invalid
+
+18 → Valid
+
+19 → Valid
+
+60 → Valid
+
+61 → Invalid
+
+27.  Explain about Equivalence Partitioning and Write a test case about that ?
+
+Technique that divides input data into valid and invalid classes.
+
+From each partition, only one representative test value is enough.
+
+Reduces total test cases while maintaining good coverage.
+
+Example Requirement: Age must be between 18 and 60.
+
+EP Test Cases:
+
+Invalid partition (<18): 10
+
+Valid partition (18–60): 30
+
+Invalid partition (>60): 75
+
+
+28.Difference between State Transition Testing and Use Case Testing?
+
+
+State Transition Testing: Focuses on system behavior when moving from one state to another based on events/inputs.
+
+Use Case Testing: Focuses on user interactions and end-to-end flows based on functional requirements.
+
+State Transition checks valid/invalid transitions; Use Case checks real user scenarios.
+
+State Transition is event-driven; Use Case is goal-driven.
+
+State Transition uses diagrams/tables; Use Case uses narratives and actors.
+
+
+
+29.
+
+Use Case Diagram – Banking System (Textual Representation)
+
+Actors:
+
+User
+
+Admin
+
+User Use Cases:
+
+Register
+
+Login
+
+Check Balance
+
+Transfer Funds
+
+Admin Use Cases:
+
+Register
+
+Login
+
+Delete Account
+
+Update Account
+
+
+          +------------------------+
+          |      Banking System    |
+          +------------------------+
+User -----------------> (Register)
+User -----------------> (Login)
+User -----------------> (Check Balance)
+User -----------------> (Transfer Funds)
+
+Admin ----------------> (Register)
+Admin ----------------> (Login)
+Admin ----------------> (Delete Account)
+Admin ----------------> (Update Account)
+
+
+
+30. State Transition Testing (Explanation + Example Table)
+
+State Transition Testing checks how the system behaves when moving between different states based on user actions.
+
+Useful when the application's response depends on previous state (e.g., login flows, shopping carts, banking).
+
+Ensures valid transitions work and invalid transitions trigger proper errors.
+
+Example: Shopping Site – Add to Cart & Checkout Flow
+
+States:
+
+S1: Not Logged In
+
+S2: Logged In
+
+S3: Item Added to Cart
+
+S4: Checkout Completed
+
+Events:
+
+E1: Login
+
+E2: Add Item
+
+E3: Checkout
+
+E4: Logout
+
+
+| Current State      | Event    | Next State         | Expected Result                   |
+| ------------------ | -------- | ------------------ | --------------------------------- |
+| Not Logged In      | Login    | Logged In          | User successfully logged in       |
+| Logged In          | Add Item | Item Added to Cart | Item added to cart                |
+| Item Added to Cart | Checkout | Checkout Completed | Order placed successfully         |
+| Item Added to Cart | Logout   | Not Logged In      | Cart cleared; user logged out     |
+| Not Logged In      | Checkout | Not Logged In      | Error: Must login before checkout |
+| Logged In          | Checkout | Logged In          | Error: Cart empty                 |
+
+
+
+31.Write 3 examples explaining about White Box Testing.
+
+
+Three Examples of White Box Testing
+
+Example 1 – Code Coverage Testing
+
+Verifying all statements, branches, and conditions are executed.
+
+Example: Ensuring all if–else paths in a login function are tested.
+
+Example 2 – Loop Testing
+
+Checking loop entry, exit conditions, and boundary iterations.
+
+Example: Validating a for loop that processes 1–10 items runs correctly for 0, 1, 10, and 11 items.
+
+Example 3 – Path Testing
+
+Ensuring every unique path through the code logic is executed once.
+
+Example: Testing all possible paths in a payment validation method.
+
+
+32. Prepare a small diagram / table about white box testing.
+
+| Technique          | Purpose                           | Example                           |
+| ------------------ | --------------------------------- | --------------------------------- |
+| Statement Coverage | Execute all lines of code         | Test all login validations        |
+| Branch Coverage    | Execute all branches (true/false) | Test both valid/invalid OTP flows |
+| Path Coverage      | Execute all logical paths         | Payment routing logic             |
+| Loop Testing       | Validate loops and boundaries     | Iterating cart items              |
+
+
+33. Summarize key challenge and solutions related to White Box Testing.
+
+Challenges:
+
+Requires deep programming knowledge.
+
+Hard to test large, complex code structures.
+
+Time-consuming due to many paths & branches.
+
+Maintenance effort increases with code changes.
+
+Solutions:
+
+Use tools like JaCoCo, JUnit, SonarQube for coverage automation.
+
+Break code into smaller modular functions.
+
+Follow coding standards to reduce complexity.
+
+Maintain updated documentation of code logic.
+
+
+34. Create at least 2 Testcase demonstrating White Box Testing.
+
+Test Case 1 – Branch Coverage for Login Function
+
+Code Under Test
+
+if(username == null) return "Invalid";
+if(password == null) return "Invalid";
+if(username.equals("admin") && password.equals("123")) return "Success";
+else return "Failed";
+
+
+Test Case
+
+TC ID	Input (username, password)	Execution Goal	Expected Output
+TC01	null, "123"	Cover null username	Invalid
+TC02	"admin", null	Cover null password	Invalid
+TC03	"admin", "123"	True branch success	Success
+TC04	"admin", "999"	False branch failure	Failed
+
+
+Test Case 2 – Loop Testing for Cart Calculation
+
+Code Under Test (Simplified)
+
+int sum = 0;
+for(int i=0; i<items.length; i++){
+   sum += items[i];
+}
+return sum;
+
+
+Test Case
+
+TC ID	Input (items array)	Loop Behavior Tested	Expected Output
+TC01	[]	Loop runs 0 times	                0
+TC02	[100]	Loop runs once	                100
+TC03	[10,20,30]	Loop runs multiple times	60
+
+
+35. Difference Between Experience-Based Testing and Formal Testing
+Experience-Based Testing? 
+
+
+Relies on tester’s knowledge, intuition, and past project experience.
+
+
+Useful when documentation is limited or time is short.
+
+
+Detects practical, real-world defects quickly.
+
+
+Examples: Error Guessing, Exploratory Testing.
+
+
+Formal Testing:
+
+
+Follows structured processes, documentation, and predefined test cases.
+
+
+Based on requirements, standards, and coverage criteria.
+
+
+Ensures systematic, measurable, and traceable testing.
+
+
+Examples: Boundary Value Analysis, Equivalence Partitioning, State Transition Testing.
+
+
+
 
