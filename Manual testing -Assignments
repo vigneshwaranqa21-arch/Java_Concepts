@@ -105,13 +105,13 @@ Design ↔ Integration Testing
 Coding ↔ Unit Testing
 
 
-
 11. Difference between Blackbox and Whitebox Testing:
 Blackbox tests functionality without seeing internal code.
 Whitebox tests internal logic and code structure.
 Blackbox = User perspective; Whitebox = Developer perspective.
 
 12. What is Non-Functional Testing? Give some examples:
+
 Non-Functional Testing checks performance, usability, security, and reliability.
 It ensures the system’s behavior under specific conditions.
 Examples: Load Testing, Stress Testing, Security Testing.
@@ -134,6 +134,7 @@ It promotes equal access and compliance with accessibility standards.
 16. Navigate to this page https://www.saucedemo.com and  Write Testcase for Products page.
 
 Test Case ID: TC_001
+
 Test Case Description: Verify product list is displayed correctly on Products page.
 
 Precondition: User logged in successfully.
@@ -486,5 +487,193 @@ Ensures systematic, measurable, and traceable testing.
 Examples: Boundary Value Analysis, Equivalence Partitioning, State Transition Testing.
 
 
+
+
+36. Explain in detail about Defect Reporting and its sample template.
+
+
+Defect reporting is the process of logging issues found during testing with complete evidence.
+
+Its goal is to help developers reproduce, analyze, and fix defects quickly.
+
+A good report is clear, concise, reproducible, and includes environment details.
+
+
+| Field                | Description / Example                                      |
+|----------------------|------------------------------------------------------------|
+| Defect ID            | DEF-2025-001                                               |
+| Title                | Login button click not triggering authentication           |
+| Severity / Priority  | Critical / High                                            |
+| Environment          | QA Env / Chrome 120 / Windows 10                           |
+| Steps to Reproduce   | 1. Navigate to login page                                  |
+|                      | 2. Enter valid username and password                       |
+|                      | 3. Click on the Login button                               |
+| Expected Result      | User should be logged into the dashboard                   |
+| Actual Result        | Login button is unresponsive; no action occurs             |
+| Attachments          | login_button_issue.png / console_error_log.txt             |
+
+
+
+
+37. Difference between Not a Defect and Duplicate Defect. Give some examples.
+
+
+Not a Defect: Behavior is correct as per requirement; tester misunderstood the functionality.
+
+Example: Requirement says “Password must auto-expire after 60 days” → Tester reports it as bug; dev marks it “Not a defect”.
+
+
+Duplicate Defect: Same issue already exists in the defect tracker.
+
+Example: Two testers raise the same login crash issue → second one marked “Duplicate”.
+
+Key Difference: Validity (Not a Defect) vs Redundancy (Duplicate).
+
+
+
+
+
+38. What will be the status of defect when the developer accepts the defect and starts to work on it?
+
+
+Status becomes “In Progress”.
+
+This indicates the developer has acknowledged the defect.
+
+Work has started on analyzing and applying the fix.
+
+It moves out of the Open/Assigned state.
+
+Used to showcase active development on the issue.
+
+
+
+39.If a tester tests the fix of a defect and found that it is not fixed. He will change the defect status to which state and why?
+
+
+Tester changes status to “Reopen”.
+
+Reason: The expected fix is not working or issue still reproducible.
+
+Reopened defects go back to the developer for re-fixing.
+
+Indicates failed retesting.
+
+Ensures defect lifecycle loops properly.
+
+
+
+40.Difference between Defect and Failure with examples. 
+
+	Defect: A flaw in the software that causes it to behave unexpectedly.
+	
+	Example: A missing validation on email format in registration form.
+			
+	Failure: When the software does not perform as expected during execution.
+			
+	Example: Application crashes when user submits invalid email format.
+	
+	Key Difference: Defect is the root cause; Failure is the observable effect.		
+	
+
+41. Explain about Test Metrics with examples.
+
+ Test Metrics are quantitative measures used to assess the quality and effectiveness of the testing process.
+ 
+ They help track progress, identify bottlenecks, and improve testing strategies.
+ 
+ Examples:
+ 
+ Defect Density: Number of defects per size of the software (e.g., per 1000 lines of code).		
+ Test Case Execution Rate: Percentage of test cases executed over total planned test cases.
+ Test Pass Rate: Percentage of test cases that passed successfully.
+ Defect Resolution Time: Average time taken to fix reported defects.
+ Test Coverage: Percentage of requirements or code covered by test cases.
+ 
+ 
+42. Explain about different types of metrics.
+There are several types of test metrics used to evaluate different aspects of the testing process:
+
+1. **Product Quality Metrics**: Measure the quality of the software product itself.
+
+   - Example: Defect Density, Defect Leakage.
+
+2. **Process Metrics**: Evaluate the efficiency and effectiveness of the testing process.
+
+   - Example: Test Case Execution Rate, Test Pass Rate.
+   
+3. **Project Metrics**: Track the progress and status of the testing project.
+   
+   - Example: Test Completion Percentage, Defect Resolution Time.
+   			
+
+ 
+ 42. Explain about Test Plan and its template.
+ 	
+ 	A Test Plan is a formal document that outlines the testing strategy, objectives, resources, schedule, and scope for a software project.
+ 
+ 	It serves as a roadmap for the testing team and stakeholders to ensure all aspects of testing are covered.
+ 	
+ 	Test Plan Template:
+ 	------------------------------------------------------------------------------
+ 	| Section               | Description                                        | 	
+ 	|-----------------------|----------------------------------------------------|
+ 	| Test Plan ID          | Unique identifier for the test plan                |
+ 	| Introduction          | Overview of the project and testing objectives     |
+ 	| Scope                 | Features to be tested and out of scope             |
+ 	| Test Strategy         | Overall approach to testing (types, levels)        |
+ 	| Test Environment      | Hardware, software, and network configurations     |
+ 	| Test Schedule         | Timeline for testing activities                    |
+ 	| Resources             | Team members, tools, and other resources needed    |
+ 	| Deliverables          | Documents and reports to be produced               |
+ 	| Risks and Mitigation  | Potential risks and their mitigation strategies    |
+ 	| Approval              | Sign-off from stakeholders                         |
+ 	-----------------------------------------------------------------------------	
+ 		
+		 			
+43. Explain about Test Strategy and its template.	
+		 			
+A Test Strategy is a high-level document that defines the testing approach, objectives, resources, and schedule for a software project.
+It provides a framework for the testing process and ensures alignment with project goals.
+
+Test Strategy Template:
+---------------------------------------------------------------------------------------------
+| Section               | Description                                                        |
+|-----------------------|--------------------------------------------------------------------|
+| Test Strategy ID      | Unique identifier for the test strategy                            |
+| Introduction          | Overview of the project and testing objectives                     |
+| Testing Objectives    | Goals and objectives of the testing effort                         |
+| Test Levels           | Different levels of testing (unit, integration, etc.)              |
+| Test Types            | Types of testing to be performed (functional, non-functional, etc.)|
+| Test Environment      | Hardware, software, and network configurations                     |
+| Test Tools            | Tools and technologies to be used                                  |
+| Test Schedule         | Timeline for testing activities                                    |
+| Resources             | Team members, tools, and other resources needed                    |
+| Risks and Mitigation  | Potential risks and their mitigation strategies                    |
+| Approval              | Sign-off from stakeholders                                         |
+---------------------------------------------------------------------------------------------
+ 			
+ 					
+
+
+44.  What is Risk-Based Testing and when will you use that?
+
+Risk-Based Testing (RBT) is a testing approach that prioritizes testing efforts based on the risk of failure and its potential impact on the project.
+It focuses on identifying high-risk areas and allocating resources to test those areas more thoroughly.
+
+When to use RBT:
+	
+When project timelines are tight and resources are limited.
+
+When certain features or components are critical to business operations.
+
+When there is a history of defects in specific areas of the application.
+
+When regulatory compliance or security is a concern.
+
+When testing complex systems with many interdependencies.
+
+
+45.
 
 
