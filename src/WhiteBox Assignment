@@ -1,0 +1,96 @@
+
+1.Write 3 examples explaining about White Box Testing.
+
+
+Three Examples of White Box Testing
+
+Example 1 – Code Coverage Testing
+
+Verifying all statements, branches, and conditions are executed.
+
+Example: Ensuring all if–else paths in a login function are tested.
+
+Example 2 – Loop Testing
+
+Checking loop entry, exit conditions, and boundary iterations.
+
+Example: Validating a for loop that processes 1–10 items runs correctly for 0, 1, 10, and 11 items.
+
+Example 3 – Path Testing
+
+Ensuring every unique path through the code logic is executed once.
+
+Example: Testing all possible paths in a payment validation method.
+
+
+2. Prepare a small diagram / table about white box testing.
+
+| Technique          | Purpose                           | Example                           |
+| ------------------ | --------------------------------- | --------------------------------- |
+| Statement Coverage | Execute all lines of code         | Test all login validations        |
+| Branch Coverage    | Execute all branches (true/false) | Test both valid/invalid OTP flows |
+| Path Coverage      | Execute all logical paths         | Payment routing logic             |
+| Loop Testing       | Validate loops and boundaries     | Iterating cart items              |
+
+
+3. Summarize key challenge and solutions related to White Box Testing.
+
+Challenges:
+
+Requires deep programming knowledge.
+
+Hard to test large, complex code structures.
+
+Time-consuming due to many paths & branches.
+
+Maintenance effort increases with code changes.
+
+Solutions:
+
+Use tools like JaCoCo, JUnit, SonarQube for coverage automation.
+
+Break code into smaller modular functions.
+
+Follow coding standards to reduce complexity.
+
+Maintain updated documentation of code logic.
+
+
+4. Create at least 2 Testcase demonstrating White Box Testing.
+
+Test Case 1 – Branch Coverage for Login Function
+
+Code Under Test
+
+if(username == null) return "Invalid";
+if(password == null) return "Invalid";
+if(username.equals("admin") && password.equals("123")) return "Success";
+else return "Failed";
+
+
+Test Case
+
+TC ID	Input (username, password)	Execution Goal	Expected Output
+TC01	null, "123"	Cover null username	Invalid
+TC02	"admin", null	Cover null password	Invalid
+TC03	"admin", "123"	True branch success	Success
+TC04	"admin", "999"	False branch failure	Failed
+
+
+Test Case 2 – Loop Testing for Cart Calculation
+
+Code Under Test (Simplified)
+
+int sum = 0;
+for(int i=0; i<items.length; i++){
+   sum += items[i];
+}
+return sum;
+
+
+Test Case
+
+TC ID	Input (items array)	Loop Behavior Tested	Expected Output
+TC01	[]	Loop runs 0 times	                0
+TC02	[100]	Loop runs once	                100
+TC03	[10,20,30]	Loop runs multiple times	60
