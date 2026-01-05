@@ -1,0 +1,82 @@
+1.Explain in detail about Defect Reporting and its sample template.
+
+
+Defect reporting is the process of logging issues found during testing with complete evidence
+Its goal is to help developers reproduce, analyze, and fix defects quickly.
+
+A good report is clear, concise, reproducible, and includes environment details.
+
+
+| Field                | Description / Example                                      |
+|----------------------|------------------------------------------------------------|
+| Defect ID            | DEF-2025-001                                               |
+| Title                | Login button click not triggering authentication           |
+| Severity / Priority  | Critical / High                                            |
+| Environment          | QA Env / Chrome 120 / Windows 10                           |
+| Steps to Reproduce   | 1. Navigate to login page                                  |
+|                      | 2. Enter valid username and password                       |
+|                      | 3. Click on the Login button                               |
+| Expected Result      | User should be logged into the dashboard                   |
+| Actual Result        | Login button is unresponsive; no action occurs             |
+| Attachments          | login_button_issue.png / console_error_log.txt             |
+
+
+
+
+2. Difference between Not a Defect and Duplicate Defect. Give some examples.
+
+
+Not a Defect: Behavior is correct as per requirement; tester misunderstood the functionality.
+
+Example: Requirement says “Password must auto-expire after 60 days” → Tester reports it as bug; dev marks it “Not a defect”.
+
+
+Duplicate Defect: Same issue already exists in the defect tracker.
+
+Example: Two testers raise the same login crash issue → second one marked “Duplicate”.
+
+Key Difference: Validity (Not a Defect) vs Redundancy (Duplicate).
+
+
+3. What will be the status of defect when the developer accepts the defect and starts to work on it?
+
+
+Status becomes “In Progress”.
+
+This indicates the developer has acknowledged the defect.
+
+Work has started on analyzing and applying the fix.
+
+It moves out of the Open/Assigned state.
+
+Used to showcase active development on the issue.
+
+
+
+4.If a tester tests the fix of a defect and found that it is not fixed. He will change the defect status to which state and why?
+
+
+Tester changes status to “Reopen”.
+
+Reason: The expected fix is not working or issue still reproducible.
+
+Reopened defects go back to the developer for re-fixing.
+
+Indicates failed retesting.
+
+Ensures defect lifecycle loops properly.
+
+
+
+5.Difference between Defect and Failure with examples. 
+
+	Defect: A flaw in the software that causes it to behave unexpectedly.
+	
+	Example: A missing validation on email format in registration form.
+			
+	Failure: When the software does not perform as expected during execution.
+			
+	Example: Application crashes when user submits invalid email format.
+	
+	Key Difference: Defect is the root cause; Failure is the observable effect.		
+	
