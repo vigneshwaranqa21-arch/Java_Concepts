@@ -1,0 +1,45 @@
+
+1. Difference Between Experience-Based Testing and Formal Testing
+Experience-Based Testing? 
+
+
+Relies on tester’s knowledge, intuition, and past project experience.
+
+
+Useful when documentation is limited or time is short.
+
+
+Detects practical, real-world defects quickly.
+
+
+Examples: Error Guessing, Exploratory Testing.
+
+
+Formal Testing:
+
+
+Follows structured processes, documentation, and predefined test cases.
+
+
+Based on requirements, standards, and coverage criteria.
+
+
+Ensures systematic, measurable, and traceable testing.
+
+
+Examples: Boundary Value Analysis, Equivalence Partitioning, State Transition Testing.
+
+
+
+2.Explain about checklist based testing.
+
+Checklist-Based Testing is a testing technique where testers use a predefined list of items or criteria to ensure that all necessary aspects of the software have been tested. The checklist serves as a guide to help testers remember important areas to cover during the testing process.
+
+
+
+
+
+
+
+
+
