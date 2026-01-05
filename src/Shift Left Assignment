@@ -1,0 +1,13 @@
+1. Difference between Shift Left and Shift Right Testing
+Shift Left testing focuses on early testing in SDLC.
+It includes requirement review, unit, and integration testing.
+Shift Right testing happens after deployment.
+It includes monitoring, production validation, and user feedback.
+Goal is early prevention vs real-time quality improvement.
+
+2. Explain Continuous Testing
+Continuous testing is testing throughout the CI/CD pipeline.
+Tests run automatically on every code change.
+Provides quick feedback to developers.
+Ensures quality at every stage of delivery.
+Supports faster and reliable releases.
