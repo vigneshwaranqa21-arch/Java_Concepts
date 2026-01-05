@@ -1,0 +1,30 @@
+1. Scrum
+
+* Scrum is an Agile framework used to deliver products in short iterations called sprints.
+* Sprint duration is usually 2–4 weeks.
+* Roles include Product Owner, Scrum Master, and Development Team.
+* Key ceremonies: Sprint Planning, Daily Scrum, Review, Retrospective.
+* Focuses on collaboration, transparency, and continuous improvement.
+
+2. Kanban
+
+* Kanban is an Agile method focused on continuous delivery without fixed sprints.
+* Work is visualized using a Kanban board (To Do, In Progress, Done).
+* Limits Work In Progress (WIP) to improve flow efficiency.
+* No defined roles or time-boxed iterations.
+* Best suited for support and maintenance projects.
+
+3. Agile Testing – When & Why
+
+* Agile testing is useful when requirements change frequently.
+* Testing is done continuously along with development.
+* Early defect detection reduces cost and rework.
+* Testers collaborate closely with developers and business.
+* Ensures faster feedback and better product quality.
+
+4. TDD (Test Driven Development)
+
+* TDD is a development approach where tests are written before code.
+* Follows Red → Green → Refactor cycle.
+* Red: write failing test, Green: write code to pass, Refactor: optimize.
+* Improves code quality and test coverage.
