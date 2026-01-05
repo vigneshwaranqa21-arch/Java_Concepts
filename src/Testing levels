@@ -1,0 +1,26 @@
+
+11. Difference between Blackbox and Whitebox Testing:
+Blackbox tests functionality without seeing internal code.
+Whitebox tests internal logic and code structure.
+Blackbox = User perspective; Whitebox = Developer perspective.
+
+12. What is Non-Functional Testing? Give some examples:
+
+Non-Functional Testing checks performance, usability, security, and reliability.
+It ensures the system’s behavior under specific conditions.
+Examples: Load Testing, Stress Testing, Security Testing.
+
+13. Explain the significance of Integration Testing:
+Integration Testing checks data flow and interaction between modules.
+It ensures combined modules work together properly.
+It helps catch interface and communication defects early.
+
+14. Browser and Device Testing Scenario:
+Testing a site on different browsers or devices is Compatibility Testing.
+It ensures the application works consistently across environments.
+Finding a defect in iPhone 6 means device compatibility issue.
+
+15. Define Accessibility Testing and its importance:
+Accessibility Testing ensures the application is usable by people with disabilities.
+It checks screen readers, color contrast, and keyboard navigation.
+It promotes equal access and compliance with accessibility standards.
