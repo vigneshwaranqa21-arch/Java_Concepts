@@ -1,0 +1,23 @@
+1. Coding Standards
+
+Set of guidelines for writing clean, consistent, and readable code.
+
+Includes naming conventions, indentation, comments, and file structure.
+
+Improves maintainability and reduces debugging effort.
+
+Ensures all team members follow the same coding style.
+
+Enhances code quality and reduces chances of defects.
+
+2. Benefits of Static Testing
+
+Detects defects early without executing the code.
+
+Finds syntax errors, design flaws, and coding standard violations.
+
+Reduces cost and effort by preventing late-stage defects.
+
+Improves code quality, readability, and maintainability.
+
+Enhances overall reliability and security of the application.
