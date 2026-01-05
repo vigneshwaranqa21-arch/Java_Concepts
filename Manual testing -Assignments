@@ -1,57 +1,6 @@
 Manualtesting questions 
 
-1. Write 3 examples explaining importance of testing?
 
-	It helps detect UI, usability, and functional issues that automation might miss.
-    It’s essential for critical areas like payments, checkout flows, and mobile app behavior.
-
-2. Write main difference between QA & QC? Where QA is applicable & where QC is applicable?    
-| Aspect              | QA (Quality Assurance)                                                 | QC (Quality Control)                                                  |
-| ------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| **Definition**      | Process-oriented – ensures proper processes to build quality software. | Product-oriented – ensures the final product meets quality standards. |
-| **Focus**           | Preventing defects.                                                    | Finding defects.                                                      |
-| **When applicable** | During **software development process**.                               | During **testing and after build completion**.                        |
-
-
-
-3.What is a Software Defect?
-A software defect (bug) is a mismatch between the expected result and the actual result in the application.
-It means the software does not behave as intended according to requirements.
-
-4. Write a template for Test case.
-
-| Field               | Description                               |
-| ------------------- | ----------------------------------------- |
-| **Test Case ID**    | Unique ID (e.g., TC_001)                  |
-| **Test Scenario**   | Brief description of what is being tested |
-| **Preconditions**   | Setup or conditions required before test  |
-| **Test Steps**      | Steps to perform the test                 |
-| **Expected Result** | What should happen                        |
-| **Actual Result**   | What actually happened                    |
-| **Status**          | Pass / Fail                               |
-| **Comments**        | Additional notes (if any)                 |
-
-
-5. Explain STLC. - Software Testing Life Cycle
-
-STLC defines the sequence of steps to ensure software quality.
-Phases:
-
-Requirement Analysis
-
-Test Planning
-
-Test Case Design
-
-Test Environment Setup
-
-Test Execution
-
-Defect Reporting
-
-Test Closure
-
-It ensures testing is systematic and traceable.
 
 
 6. Advantages of Agile over Waterfall Model
@@ -104,62 +53,7 @@ Design ↔ Integration Testing
 
 Coding ↔ Unit Testing
 
-
-11. Difference between Blackbox and Whitebox Testing:
-Blackbox tests functionality without seeing internal code.
-Whitebox tests internal logic and code structure.
-Blackbox = User perspective; Whitebox = Developer perspective.
-
-12. What is Non-Functional Testing? Give some examples:
-
-Non-Functional Testing checks performance, usability, security, and reliability.
-It ensures the system’s behavior under specific conditions.
-Examples: Load Testing, Stress Testing, Security Testing.
-
-13. Explain the significance of Integration Testing:
-Integration Testing checks data flow and interaction between modules.
-It ensures combined modules work together properly.
-It helps catch interface and communication defects early.
-
-14. Browser and Device Testing Scenario:
-Testing a site on different browsers or devices is Compatibility Testing.
-It ensures the application works consistently across environments.
-Finding a defect in iPhone 6 means device compatibility issue.
-
-15. Define Accessibility Testing and its importance:
-Accessibility Testing ensures the application is usable by people with disabilities.
-It checks screen readers, color contrast, and keyboard navigation.
-It promotes equal access and compliance with accessibility standards.
-
-16. Navigate to this page https://www.saucedemo.com and  Write Testcase for Products page.
-
-Test Case ID: TC_001
-
-Test Case Description: Verify product list is displayed correctly on Products page.
-
-Precondition: User logged in successfully.
-
-Test Steps: Navigate to Products page → Check product images, names, and prices.
-
-Expected Result: All products display with correct image, name, and price details.
-
-Status: Pass/Fail
-
-
-
-17.What is Domain Requirements? Explain with examples.
-
-Domain Requirements define business-specific rules and logic for the application.
-They describe how the software should behave in a particular industry.
-
-Example: In Banking — Interest calculation; 
-         In E-commerce — Cart and Payment flow
-
-18. Benefits of RTM?
-
-RTM ensures complete test coverage by linking requirements to test cases.
-It helps track missing or untested functionalities easily.
-It provides clear traceability from requirement to defect closure.
+***********************************************************************************************************
 
 
 

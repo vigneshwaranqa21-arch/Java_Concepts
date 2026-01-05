@@ -1,0 +1,31 @@
+
+
+1. Navigate to this page https://www.saucedemo.com and  Write Testcase for Products page.
+
+Test Case ID: TC_001
+
+Test Case Description: Verify product list is displayed correctly on Products page.
+
+Precondition: User logged in successfully.
+
+Test Steps: Navigate to Products page → Check product images, names, and prices.
+
+Expected Result: All products display with correct image, name, and price details.
+
+Status: Pass/Fail
+
+
+
+2.What is Domain Requirements? Explain with examples.
+
+Domain Requirements define business-specific rules and logic for the application.
+They describe how the software should behave in a particular industry.
+
+Example: In Banking — Interest calculation; 
+         In E-commerce — Cart and Payment flow
+
+3. Benefits of RTM?
+
+RTM ensures complete test coverage by linking requirements to test cases.
+It helps track missing or untested functionalities easily.
+It provides clear traceability from requirement to defect closure.
