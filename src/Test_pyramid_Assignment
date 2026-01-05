@@ -1,0 +1,20 @@
+1. Explain the importance of Test Pyramid.
+The Test Pyramid defines the ideal distribution of tests.
+It recommends more unit tests, fewer UI tests.
+Helps in early defect detection.
+Reduces execution time and maintenance cost.
+Improves overall quality and test reliability.
+
+2. Which Agile Quadrant is suitable for Manual Testing? Why?
+Agile Quadrant Q2 is suitable for manual testing.
+It focuses on business-facing tests.
+Includes exploratory, usability, and acceptance testing.
+Manual testing is needed for user behavior validation.
+Human judgment is critical in this quadrant.
+
+3. Which Test Pyramid layer is easier to test and detects bugs early? Explain.
+Unit testing layer is easiest to test.
+It tests individual methods or functions in isolation.
+Execution is fast and simple to automate.
+Bugs are found during development itself.
+Fixing defects here is cheapest and fastest.
