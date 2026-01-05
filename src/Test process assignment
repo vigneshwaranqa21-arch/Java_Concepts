@@ -1,0 +1,26 @@
+
+1.Prepare a sample RTM document for E-commerce / Banking application ?
+
+ Sample 
+ RTM (E-commerce):
+
+| Req ID | Requirement | Test Case ID | Status | Defect ID |
+| R001   | User Login  | TC_001       | Passed | -         |
+| R002   | Add to Cart | TC_005       | Failed | D_002     |
+| R003   | Payment     | TC_010       | Passed | -         |
+
+2. What are all the Entry criteria needed to start Testing?
+
+Approved test plan, test cases, stable build, test environment ready.
+
+3. What are all the deliverables you provide to stake holder after test completion?
+
+Test Summary Report, Defect Report, RTM, Closure Report.
+
+4.What are all the factors need to confirm that your System Testing is complete? 
+
+All test cases executed, major bugs fixed, exit criteria met.
+
+5. Test Execution Report is the deliverable for Entry criteria or Exit criteria? Give reason for the same.
+
+Test Execution Report → Exit Criteria: Because it’s shared after execution to confirm test completion.
