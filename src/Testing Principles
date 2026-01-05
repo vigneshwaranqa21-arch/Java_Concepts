@@ -1,0 +1,53 @@
+1. Write 3 examples explaining importance of testing?
+
+	It helps detect UI, usability, and functional issues that automation might miss.
+    It’s essential for critical areas like payments, checkout flows, and mobile app behavior.
+
+2. Write main difference between QA & QC? Where QA is applicable & where QC is applicable?    
+| Aspect              | QA (Quality Assurance)                                                 | QC (Quality Control)                                                  |
+| ------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Definition          | Process-oriented – ensures proper processes to build quality software. | Product-oriented – ensures the final product meets quality standards. |
+| Focus               | Preventing defects.                                                    | Finding defects.                                                      |
+| When applicable     | During software development process.                                   | During testing and after build completion.                        |
+
+
+
+3.What is a Software Defect?
+
+A software defect (bug) is a mismatch between the expected result and the actual result in the application.
+It means the software does not behave as intended according to requirements.
+
+4. Write a template for Test case.
+
+| Field               | Description                               |
+| ------------------- | ----------------------------------------- |
+| Test Case ID    | Unique ID (e.g., TC_001)                  |
+| Test Scenario   | Brief description of what is being tested |
+| Preconditions   | Setup or conditions required before test  |
+| Test Steps      | Steps to perform the test                 |
+| Expected Result | What should happen                        |
+| Actual Result   | What actually happened                    |
+| Status          | Pass / Fail                               |
+| Comments        | Additional notes (if any)                 |
+
+
+5. Explain STLC. - Software Testing Life Cycle
+
+STLC defines the sequence of steps to ensure software quality.
+Phases:
+
+Requirement Analysis
+
+Test Planning
+
+Test Case Design
+
+Test Environment Setup
+
+Test Execution
+
+Defect Reporting
+
+Test Closure
+
+It ensures testing is systematic and traceable.
