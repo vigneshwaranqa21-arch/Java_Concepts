@@ -1,0 +1,97 @@
+1.Explain about Test Metrics with examples.
+
+ Test Metrics are quantitative measures used to assess the quality and effectiveness of the testing process.
+ 
+ They help track progress, identify bottlenecks, and improve testing strategies.
+ 
+ Examples:
+ 
+ Defect Density: Number of defects per size of the software (e.g., per 1000 lines of code).		
+ Test Case Execution Rate: Percentage of test cases executed over total planned test cases.
+ Test Pass Rate: Percentage of test cases that passed successfully.
+ Defect Resolution Time: Average time taken to fix reported defects.
+ Test Coverage: Percentage of requirements or code covered by test cases.
+ 
+ 
+2. Explain about different types of metrics.
+There are several types of test metrics used to evaluate different aspects of the testing process:
+
+1. **Product Quality Metrics**: Measure the quality of the software product itself.
+
+   - Example: Defect Density, Defect Leakage.
+
+2. **Process Metrics**: Evaluate the efficiency and effectiveness of the testing process.
+
+   - Example: Test Case Execution Rate, Test Pass Rate.
+   
+3. **Project Metrics**: Track the progress and status of the testing project.
+   
+   - Example: Test Completion Percentage, Defect Resolution Time.
+   			
+
+ 
+ 3. Explain about Test Plan and its template.
+ 	
+ 	A Test Plan is a formal document that outlines the testing strategy, objectives, resources, schedule, and scope for a software project.
+ 
+ 	It serves as a roadmap for the testing team and stakeholders to ensure all aspects of testing are covered.
+ 	
+ 	Test Plan Template:
+ 	------------------------------------------------------------------------------
+ 	| Section               | Description                                        | 	
+ 	|-----------------------|----------------------------------------------------|
+ 	| Test Plan ID          | Unique identifier for the test plan                |
+ 	| Introduction          | Overview of the project and testing objectives     |
+ 	| Scope                 | Features to be tested and out of scope             |
+ 	| Test Strategy         | Overall approach to testing (types, levels)        |
+ 	| Test Environment      | Hardware, software, and network configurations     |
+ 	| Test Schedule         | Timeline for testing activities                    |
+ 	| Resources             | Team members, tools, and other resources needed    |
+ 	| Deliverables          | Documents and reports to be produced               |
+ 	| Risks and Mitigation  | Potential risks and their mitigation strategies    |
+ 	| Approval              | Sign-off from stakeholders                         |
+ 	-----------------------------------------------------------------------------	
+ 		
+		 			
+4. Explain about Test Strategy and its template.	
+		 			
+A Test Strategy is a high-level document that defines the testing approach, objectives, resources, and schedule for a software project.
+It provides a framework for the testing process and ensures alignment with project goals.
+
+Test Strategy Template:
+---------------------------------------------------------------------------------------------
+| Section               | Description                                                        |
+|-----------------------|--------------------------------------------------------------------|
+| Test Strategy ID      | Unique identifier for the test strategy                            |
+| Introduction          | Overview of the project and testing objectives                     |
+| Testing Objectives    | Goals and objectives of the testing effort                         |
+| Test Levels           | Different levels of testing (unit, integration, etc.)              |
+| Test Types            | Types of testing to be performed (functional, non-functional, etc.)|
+| Test Environment      | Hardware, software, and network configurations                     |
+| Test Tools            | Tools and technologies to be used                                  |
+| Test Schedule         | Timeline for testing activities                                    |
+| Resources             | Team members, tools, and other resources needed                    |
+| Risks and Mitigation  | Potential risks and their mitigation strategies                    |
+| Approval              | Sign-off from stakeholders                                         |
+---------------------------------------------------------------------------------------------
+ 			
+ 				
+
+
+5.  What is Risk-Based Testing and when will you use that?
+
+Risk-Based Testing (RBT) is a testing approach that prioritizes testing efforts based on the risk of failure and its potential impact on the project.
+It focuses on identifying high-risk areas and allocating resources to test those areas more thoroughly.
+
+When to use RBT:
+	
+When project timelines are tight and resources are limited.
+
+When certain features or components are critical to business operations.
+
+When there is a history of defects in specific areas of the application.
+
+When regulatory compliance or security is a concern.
+
+When testing complex systems with many interdependencies.
+
