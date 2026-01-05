@@ -1,0 +1,102 @@
+1.Difference between State Transition Testing and Use Case Testing?
+
+
+State Transition Testing: Focuses on system behavior when moving from one state to another based on events/inputs.
+
+Use Case Testing: Focuses on user interactions and end-to-end flows based on functional requirements.
+
+State Transition checks valid/invalid transitions; Use Case checks real user scenarios.
+
+State Transition is event-driven; Use Case is goal-driven.
+
+State Transition uses diagrams/tables; Use Case uses narratives and actors.
+
+
+
+
+2.Create a Usecase Diagram for Banking where user can register, login,check balance,transfer funds and admin can register,login,delete account details,update account details
+
+Use Case Diagram – Banking System (Textual Representation)
+
+Actors:
+
+User
+
+Admin
+
+User Use Cases:
+
+Register
+
+Login
+
+Check Balance
+
+Transfer Funds
+
+Admin Use Cases:
+
+Register
+
+Login
+
+Delete Account
+
+Update Account
+
+
+          +------------------------+
+          |      Banking System    |
+          +------------------------+
+User -----------------> (Register)
+User -----------------> (Login)
+User -----------------> (Check Balance)
+User -----------------> (Transfer Funds)
+
+Admin ----------------> (Register)
+Admin ----------------> (Login)
+Admin ----------------> (Delete Account)
+Admin ----------------> (Update Account)
+
+
+3.  Explain about State Transition Testing in detail with example State Transition Table for a Shopping site.
+
+State Transition Testing checks how the system behaves when moving between different states based on user actions.
+
+Useful when the application's response depends on previous state (e.g., login flows, shopping carts, banking).
+
+Ensures valid transitions work and invalid transitions trigger proper errors.
+
+Example: Shopping Site – Add to Cart & Checkout Flow
+
+States:
+
+S1: Not Logged In
+
+S2: Logged In
+
+S3: Item Added to Cart
+
+S4: Checkout Completed
+
+Events:
+
+E1: Login
+
+E2: Add Item
+
+E3: Checkout
+
+E4: Logout
+
+
+| Current State      | Event    | Next State         | Expected Result                   |
+| ------------------ | -------- | ------------------ | --------------------------------- |
+| Not Logged In      | Login    | Logged In          | User successfully logged in       |
+| Logged In          | Add Item | Item Added to Cart | Item added to cart                |
+| Item Added to Cart | Checkout | Checkout Completed | Order placed successfully         |
+| Item Added to Cart | Logout   | Not Logged In      | Cart cleared; user logged out     |
+| Not Logged In      | Checkout | Not Logged In      | Error: Must login before checkout |
+| Logged In          | Checkout | Logged In          | Error: Cart empty                 |
+
+
