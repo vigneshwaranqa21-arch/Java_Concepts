@@ -1,0 +1,41 @@
+1.Explain about Boundary Value Analysis and Write a test case for that ?
+
+Boundary Value Analysis (BVA)
+
+Technique to test values at the boundaries of input ranges.
+
+Defects often occur at the minimum, maximum, just below, and just above limits.
+
+Focuses on edge values rather than full range.
+
+Example Requirement: Age must be between 18 and 60.
+
+BVA Test Cases:
+
+17 → Invalid
+
+18 → Valid
+
+19 → Valid
+
+60 → Valid
+
+61 → Invalid
+
+2. Explain about Equivalence Partitioning and Write a test case about that ?
+
+Technique that divides input data into valid and invalid classes.
+
+From each partition, only one representative test value is enough.
+
+Reduces total test cases while maintaining good coverage.
+
+Example Requirement: Age must be between 18 and 60.
+
+EP Test Cases:
+
+Invalid partition (<18): 10
+
+Valid partition (18–60): 30
+
+Invalid partition (>60): 75
